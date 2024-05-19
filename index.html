@@ -15,16 +15,40 @@
   </head>
   <body>
     <header>
-      <nav>
-        <div class="masthead">
-          <h1>YUM-YUM</h1>
-          <p>Local Cuisine Delivered</p>
+      <nav class="heading">
+        <div class="brandname">
+          <h1 class="__heading-brand-name">YUM-YUM</h1>
+          <p class="__heading-undertitle">Local Cuisine Delivered</p>
         </div>
 
-        <div>
-          <a href="javascript:void 0;">Menu</a>
-          <a href="javascript:void 0;">Panier</a>
-        </div>
+        <ul class="navigation-bar" id="navigation-bar">
+          <li><a class="__navigation-item" href="#">Home</a></li>
+          <li><a class="__navigation-item" href="#">Restaurants</a></li>
+          <li><a class="__navigation-item" href="#">Offers</a></li>
+          <li><a class="__navigation-item" href="#">Dishes</a></li>
+          <li><a class="__navigation-item" href="#">Cuisine</a></li>
+          <li><a class="__navigation-item" href="#">About us</a></li>
+          <li><a class="__navigation-item" href="#">Contact</a></li>
+          <a class="close" href="#">
+            <img
+              class="__hamburger-close"
+              src="/images/close-menu.svg"
+              alt="close"
+            />
+          </a>
+        </ul>
+        <a class="__hamburger" href="#navigation-bar">
+          <img
+            class="__hamburger-open"
+            src="/images/hamburger.svg"
+            alt="menu"
+          />
+          <img
+            class="__shopping-cart"
+            src="/images/cart.svg"
+            alt="shopping-cart"
+          />
+        </a>
       </nav>
 
       <h2>Order from restaurants around you</h2>
