@@ -233,7 +233,7 @@ a {
 
 .dish__title {
   font-weight: 400;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   margin-bottom: 1rem;
 }
 
@@ -246,6 +246,7 @@ a {
 .dish__buy,
 .dish__ratings {
   padding: 1rem 2rem;
+  min-width: 300px;
 }
 
 .dish__ratings__wrapper {
