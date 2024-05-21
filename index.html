@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>Yum-Yum</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
@@ -14,60 +15,290 @@
     <link rel="stylesheet" type="text/css" href="/css/main.css" />
   </head>
   <body>
-    <header>
-      <nav class="heading">
-        <div class="brandname">
-          <h1 class="__heading-brand-name">YUM-YUM</h1>
-          <p class="__heading-undertitle">Local Cuisine Delivered</p>
-        </div>
+    <header class="header">
+      <div class="brand">
+        <h1 class="brand__name">YUM-YUM</h1>
+        <p class="brand__slogan">Local Cuisine Delivered</p>
+      </div>
 
-        <ul class="navigation-bar" id="navigation-bar">
-          <li><a class="__navigation-item" href="#">Home</a></li>
-          <li><a class="__navigation-item" href="#">Restaurants</a></li>
-          <li><a class="__navigation-item" href="#">Offers</a></li>
-          <li><a class="__navigation-item" href="#">Dishes</a></li>
-          <li><a class="__navigation-item" href="#">Cuisine</a></li>
-          <li><a class="__navigation-item" href="#">About us</a></li>
-          <li><a class="__navigation-item" href="#">Contact</a></li>
-          <a class="close" href="#">
-            <img
-              class="__hamburger-close"
-              src="/images/close-menu.svg"
-              alt="close"
-            />
-          </a>
+      <nav class="navigation">
+        <ul class="navigation-links">
+          <li><a href="#">Home</a></li>
+          <li>
+            <a href="#">Restaurants</a>
+          </li>
+          <li><a href="#">Offers</a></li>
+          <li><a href="#">Dishes</a></li>
+          <li><a href="#">Cuisine</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
-        <a class="__hamburger" href="#navigation-bar">
+      </nav>
+
+      <div class="actions">
+        <a class="actions__item" href="#navigation-bar">
           <img
-            class="__hamburger-open"
+            class="actions__item__image"
             src="/images/hamburger.svg"
             alt="menu"
           />
+        </a>
+        <a href="" class="actions__item">
           <img
-            class="__shopping-cart"
+            class="actions__item__image"
             src="/images/cart.svg"
             alt="shopping-cart"
-          />
-        </a>
-      </nav>
-
-      <h2>Order from restaurants around you</h2>
-      <form action="javascript:void 0;">
-        <label>
-          Enter your address
-          <input type="text" name="address" />
-        </label>
-
-        <label>
-          What would you like
-          <input type="text" name="foodtype" />
-        </label>
-
-        <p>
-          <button type="submit">Find a food</button>
-        </p>
-      </form>
+        /></a>
+      </div>
     </header>
+
+    <div class="hero">
+      <div class="hero__placeholder"></div>
+      <div class="hero__order">
+        <h2 class="hero__order__heading">Order from restaurants around you</h2>
+        <form class="hero__order__form">
+          <div class="inputs-wrapper">
+            <div class="input--with-icon">
+              <svg
+                class="input--with-icon__image"
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="1em"
+                height="1em"
+                viewBox="0 0 500 500"
+                enable-background="new 0 0 500 500"
+                xml:space="preserve"
+              >
+                <path
+                  fill="currentColor"
+                  d="M250,256.31c-34.963,0-63.312-29.355-63.312-65.575c0-36.231,28.349-65.6,63.312-65.6
+        c34.963,0,63.312,29.368,63.312,65.6C313.312,226.954,284.963,256.31,250,256.31
+        M250,46.131c-77.387,0-140.102,64.978-140.102,145.15c0,75.696,63.461,173.362,105.835,220.909
+        C231.573,429.946,250,453.868,250,453.868s19.819-24.072,36.804-42.324
+        c42.324-45.558,103.298-137.044,103.298-220.263C390.102,111.109,327.388,46.131,250,46.131"
+                />
+              </svg>
+              <input
+                class="input--with-icon__input"
+                type="text"
+                name="address"
+                placeholder="Enter your address"
+              />
+            </div>
+            <div class="input--with-icon">
+              <svg
+                class="input--with-icon__image"
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="500px"
+                height="500px"
+                viewBox="0 0 500 500"
+                enable-background="new 0 0 500 500"
+                xml:space="preserve"
+              >
+                <g>
+                  <g>
+                    <path
+                      fill="currentColor"
+                      d="M300.134,187.333c22.429-9.854,59.575-28.2,38.672-73.489
+                  C326.541,87.231,362.801,62,362.801,62s-20.119,6.555-36.363,20.346c-16.244,13.791-17.521,40.135-13.152,52.504
+                  C320.253,154.516,313.285,167.646,300.134,187.333z M49.466,199.867c0,100.638,89.774,175.467,200.534,175.467
+                  c110.739,0,200.534-74.829,200.534-175.467H49.466z M149.733,325.201l-75.2-100.268c0,0,75.2,75.2,112.8,87.733L149.733,325.201z
+                  M276.139,106.485c-12.266-29.272,23.995-57.019,23.995-57.019s-20.12,7.215-36.363,22.387
+                  c-16.244,15.151-17.522,44.155-13.152,57.74c6.967,21.665,0,36.095-13.152,57.74C259.895,176.511,297.041,156.289,276.139,106.485
+                  z M137.2,450.534h50.133l50.134-75.2h-50.134L137.2,450.534z M262.533,375.334l50.134,75.2h50.134l-50.134-75.2H262.533z
+                  M205.742,116.008c-9.833-21.294,19.192-41.476,19.192-41.476s-16.1,5.257-29.087,16.285
+                  c-13.007,11.008-14.018,32.117-10.534,41.991c5.566,15.749,0,26.242-10.513,41.991
+                  C192.755,166.925,222.459,152.228,205.742,116.008z"
+                    />
+                  </g>
+                </g>
+              </svg>
+              <input
+                class="input--with-icon__input"
+                type="text"
+                name="address"
+                placeholder="What would you like"
+              />
+            </div>
+          </div>
+          <button class="hero__order__form__submit" type="submit">
+            Find a food
+          </button>
+        </form>
+      </div>
+    </div>
+    <section class="section--with-title">
+      <h2 class="section--with-title__title">How it works?</h2>
+      <div class="section--with-title__content">
+        <div class="how-it-works">
+          <img class="how-it-works__image" src="/images/map.png" />
+          <div class="how-it-works__texts">
+            <h3 class="how-it-works__title">
+              1.
+              <div class="strong-text">Search</div>
+            </h3>
+            <p class="how-it-works__paragraph">
+              Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.
+            </p>
+          </div>
+        </div>
+        <div class="how-it-works">
+          <img class="how-it-works__image" src="/images/clipboard.png" />
+          <div class="how-it-works__texts">
+            <h3 class="how-it-works__title">
+              2.
+              <div class="strong-text">Order</div>
+            </h3>
+            <p class="how-it-works__paragraph">
+              Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut
+              libero venenatis faucibus.
+            </p>
+          </div>
+        </div>
+        <div class="how-it-works">
+          <img class="how-it-works__image" src="/images/bag.png" />
+          <div class="how-it-works__texts">
+            <h3 class="how-it-works__title">
+              3.
+              <div class="strong-text">Eat</div>
+            </h3>
+            <p class="how-it-works__paragraph">
+              Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut
+              libero venenatis faucibus.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section--with-title section--with-title--gray">
+      <h2 class="section--with-title__title">Dishes</h2>
+      <div class="section--with-title__content">
+        <div class="dish">
+          <div class="dish__image"></div>
+          <div class="dish__texts">
+            <h3 class="dish__title">Pasta with Lamb Ragù: Coppa, Boston</h3>
+            <p class="dish__reviewer">Christine Quinlan</p>
+          </div>
+          <div class="dish__buy">
+            <p class="dish__price">$ 19.95</p>
+            <button class="dish__buy__button">Buy Now</button>
+          </div>
+          <div class="dish__ratings__wrapper">
+            <p class="dish__ratings">5 stars</p>
+            <p class="dish__ratings">1,679 Ratings ></p>
+          </div>
+        </div>
+        <div class="dish">
+          <div class="dish__image"></div>
+          <div class="dish__texts">
+            <h3 class="dish__title">Pasta with Lamb Ragù: Coppa, Boston</h3>
+            <p class="dish__reviewer">Christine Quinlan</p>
+          </div>
+          <div class="dish__buy">
+            <p class="dish__price">$ 5.99</p>
+            <button class="dish__buy__button">Buy Now</button>
+          </div>
+          <div class="dish__ratings__wrapper">
+            <p class="dish__ratings">4 stars</p>
+            <p class="dish__ratings">12 Ratings ></p>
+          </div>
+        </div>
+        <div class="dish">
+          <div class="dish__image"></div>
+          <div class="dish__texts">
+            <h3 class="dish__title">
+              Pork Rillette Hand Pies: Olympic Provisions; Portland, OR
+            </h3>
+            <p class="dish__reviewer">Joey Pepperoni's Pizza</p>
+          </div>
+          <div class="dish__buy">
+            <p class="dish__price">$ 10.80</p>
+            <button class="dish__buy__button">Buy Now</button>
+          </div>
+          <div class="dish__ratings__wrapper">
+            <p class="dish__ratings">4 stars</p>
+            <p class="dish__ratings">33 Ratings ></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--
+      <div class="__header-placeholder"></div>
+      <section class="order-section">
+        <h2 class="__order-form-heading">ORDER FROM RESTAURANTS AROUND YOU</h2>
+        <form class="__order-form" action="javascript:void 0;">
+          <div class="__order-inputs-wrapper">
+            <div class="__image-and-input">
+              
+              <label>
+                <input
+                  class="__order-input"
+                  type="text"
+                  name="address"
+                  placeholder="Enter your address"
+                />
+              </label>
+            </div>
+
+            <div class="__image-and-input">
+              <svg
+                class="__input-image"
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="500px"
+                height="500px"
+                viewBox="0 0 500 500"
+                enable-background="new 0 0 500 500"
+                xml:space="preserve"
+              >
+                <g>
+                  <g>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M300.134,187.333c22.429-9.854,59.575-28.2,38.672-73.489
+                  C326.541,87.231,362.801,62,362.801,62s-20.119,6.555-36.363,20.346c-16.244,13.791-17.521,40.135-13.152,52.504
+                  C320.253,154.516,313.285,167.646,300.134,187.333z M49.466,199.867c0,100.638,89.774,175.467,200.534,175.467
+                  c110.739,0,200.534-74.829,200.534-175.467H49.466z M149.733,325.201l-75.2-100.268c0,0,75.2,75.2,112.8,87.733L149.733,325.201z
+                  M276.139,106.485c-12.266-29.272,23.995-57.019,23.995-57.019s-20.12,7.215-36.363,22.387
+                  c-16.244,15.151-17.522,44.155-13.152,57.74c6.967,21.665,0,36.095-13.152,57.74C259.895,176.511,297.041,156.289,276.139,106.485
+                  z M137.2,450.534h50.133l50.134-75.2h-50.134L137.2,450.534z M262.533,375.334l50.134,75.2h50.134l-50.134-75.2H262.533z
+                  M205.742,116.008c-9.833-21.294,19.192-41.476,19.192-41.476s-16.1,5.257-29.087,16.285
+                  c-13.007,11.008-14.018,32.117-10.534,41.991c5.566,15.749,0,26.242-10.513,41.991
+                  C192.755,166.925,222.459,152.228,205.742,116.008z"
+                    />
+                  </g>
+                </g>
+              </svg>
+
+              <label>
+                <input
+                  class="__order-input"
+                  type="text"
+                  name="foodtype"
+                  placeholder="What would you like"
+                />
+              </label>
+            </div>
+          </div>
+
+          <button class="__order-form-button" type="submit">FIND A FOOD</button>
+        </form>
+      </section>
+    
 
     <section>
       <h2>How it works</h2>
@@ -120,5 +351,6 @@
         © 2014 Yum Yum. With love by HezyTheme Terms Privacy Contact Us
       </address>
     </footer>
+    -->
   </body>
 </html>
