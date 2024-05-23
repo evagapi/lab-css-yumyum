@@ -176,6 +176,7 @@ a {
   color: var(--color-primary);
   margin-bottom: 1rem;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .section--with-title__content {
@@ -246,6 +247,11 @@ a {
 .dish__buy,
 .dish__ratings {
   padding: 1rem 2rem;
+  max-width: 300px;
+}
+
+.cuisine__title {
+  padding: 1rem 2rem;
   min-width: 300px;
 }
 
@@ -254,6 +260,7 @@ a {
   display: flex;
   flex-direction: row;
   color: var(--color-shadow);
+  overflow: hidden;
 }
 
 .dish__buy {
@@ -261,6 +268,15 @@ a {
   align-items: baseline;
   justify-content: space-between;
   border-bottom: 1px solid var(--color-shadow);
+}
+
+.featured-restaurant__buy {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--color-shadow);
+  overflow: hidden;
+  padding: 1rem;
 }
 
 .dish__buy__button {
