@@ -397,5 +397,6 @@ a {
   .section-banner__title {
     max-width: 70vw;
     max-height: 15vw;
+    overflow: hidden;
   }
 }
